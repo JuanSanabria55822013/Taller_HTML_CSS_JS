@@ -1,0 +1,43 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input[type="text"], input[type="number"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  #resultado {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
