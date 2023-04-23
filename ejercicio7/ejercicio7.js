@@ -17,5 +17,3 @@ if (numeroAValue >0 && numeroBValue >0 ){
   resultado.innerText = `Los números deben de ser mayores a 0.`;
 }
 });
-
-// || numeroBValue % numeroAValue === 0

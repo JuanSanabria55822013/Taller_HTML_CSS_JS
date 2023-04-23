@@ -14,7 +14,7 @@ function identifyIntegers() {
           }
       } else {
         output += "<span class='error'>" + numeros[i] + " no es un número entero</span><br>";
-    }
+      }
   
     resultado.innerHTML = output;
   }
