@@ -1,20 +1,20 @@
 const numero = document.getElementById('numero');
-const texto = document.getElementById('texto');
-const tipo = document.getElementById('tipo');
+const boton = document.getElementById('identificar');
+const resultado = document.getElementById('resultado');
 
-numero.addEventListener('input', () => {
-  const numeroValue = numero.value;
-
-  if (numeroValue !== '') {
-    texto.textContent = numeroValue;
-
-    if (numeroValue % 2 === 0) {
-      tipo.textContent = 'par';
-    } else {
-      tipo.textContent = 'impar';
+boton.addEventListener('click', () => {
+const num = numero.value;
+  if (num < 0){
+    resultado.innerText = `El número ${num} no es un numero entero positivo`;
+  }else {
+  if ((num % 1 == 0)) {
+    if (num % 2 === 0) {
+      resultado.innerText = `El número ${num} es par`;
+      } else {
+        resultado.innerText = `El número ${num} es impar`;
+      }
+    }else{
+      resultado.innerText = `El número ${num} no es un numero entero`;
     }
-  } else {
-    texto.textContent = '';
-    tipo.textContent = '';
   }
 });
